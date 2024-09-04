@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+
+.header {
+	height: 60px;
+	width: 100%;
+	top: 0;
+	z-index: 2;
+}
+.slider {
+	position: relative;
+	width: 100%;
+	height: 520px;
+	overflow: hidden;	
+	font-family: 'Wix Madefor Display', sans-serif;
+}
+.myslider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transform: translateX(-50%);
+	transition: all .5s ease;
+}
+
+.painel {
+
+}
+
+
+
+.myslider img{
+	height: 100%;
+	width: 100%;
+}
+.sombra {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .5);
+	position: absolute;
+}
+.content {
+	position: absolute;
+	top: 15rem;
+	left: 10rem;
+	width: 60%;
+	opacity: 0;
+	padding: 1rem;	
+	animation: slide-up 1s ease .5s;
+	animation-fill-mode: forwards;
+	visibility: hidden;
+}
+@keyframes slide-up {
+	from {
+		visibility: visible;
+		top: 20rem;
+	}
+	to {
+		visibility: visible;
+		top: 15rem;
+	}
+
+}
+
+.content > *{
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	margin-top: .2rem;
+}
+.content h2{
+	font-family: 'Oswald', sans-serif;
+	color: #F9CC19;
+	font-weight: bold;
+}
+
+.current {
+	opacity: 1;
+	transform: translateX(0);
+  	transition: all 0.5s ease;
+}
+
+.current .content{
+	opacity: 1;
+}
+
+
+.prev, .next {
+	position: absolute;
+	font-size: 30px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	z-index: 999;
+	top: 45%;
+}
+.next {
+	right: 0;
+}
+.prev:hover , .next:hover{
+	color: #F9CC19;
+}
+
+
+@media screen and (max-width: 600px){
+	.myslider img{
+		width: 100%;
+		height: 100%;
+	}
+	.content {
+		width: 80%;
+		left: 2.5rem;
+		padding: .4rem;
+	}
+	.prev, .next {
+		font-size: 20px;
+	}
+	.content h2{
+		font-size: 20px;
+	}
+	.content h4{
+		font-size: 15px;
+	}
+	.content span{
+		font-size: 12px;
+	}
+}

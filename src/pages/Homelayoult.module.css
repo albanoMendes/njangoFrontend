@@ -1,0 +1,43 @@
+.search {
+  margin-top: 10px;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.form_element {
+  position: relative;
+}
+
+.search input {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border: 0;
+  border-radius: 0x;
+  p: 1;
+}
+
+.search input {
+  text-indent: 1em;
+}
+
+.search .fa_search {
+  position: absolute;
+  top: -2px;
+  right: 10px;
+  bottom: 0;
+}
+.logo_footer {
+  display: flex;
+}
+.logo_footer img{
+  width: 50px;
+  height: 40px;
+}
+
+@media screen and (max-width: 500px){
+  .logo_footer img{
+    width: 40px;
+    height: 30px;
+  }
+}

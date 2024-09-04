@@ -1,0 +1,23 @@
+.carousel {
+	padding: 1rem;
+	color: #fff;
+	height: 250px;
+	width: 98%;
+	justify-content: center;
+	align-items: center;
+}
+
+.box{
+	background-color: lightgreen;
+	height: 200px;
+	width: 400px;
+	margin: 0 1rem;
+}
+
+.box h3{
+	text-align: center;
+}
+
+.slick-slide div {
+	margin: 0 .1rem;
+}
