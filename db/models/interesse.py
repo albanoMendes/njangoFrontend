@@ -9,6 +9,8 @@ class Interesse(BaseModel):
     email: str
     valor: float
     perfil: str
+    tipo: str
+    busca: str
     descricao: str
     status: str
     idplano: str

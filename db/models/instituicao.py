@@ -1,8 +1,8 @@
 from pydantic import BaseModel
 from typing import Optional
 
-# Entidade Comentario
-class Comentario(BaseModel):
+# Entidade Institucao
+class Instituicao(BaseModel):
     id: Optional[str]
     nome: str
     area: str

@@ -6,6 +6,8 @@ def interesse_schema(interesse) -> dict:
             "email": interesse["email"],
             "valor": interesse["valor"],
             "perfil": interesse["perfil"],
+            "tipo": interesse["tipo"],
+            "busca": interesse["busca"],
             "descricao": interesse["descricao"],
             "datecreate": interesse["datecreate"],
             "status": interesse["status"],
